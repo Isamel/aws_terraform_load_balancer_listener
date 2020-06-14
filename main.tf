@@ -5,7 +5,7 @@ resource "null_resource" "depends_on" {
 }
 
 resource "aws_lb_listener" "alb_listener_terraform" {
-    count                = var.alb_count
+    count                = var.alb_listener_count
     depends_on           = [null_resource.depends_on]
     load_balancer_arn    = var.alb_listener_load_balancer_arn
     port                 = var.alb_listener_port
