@@ -20,5 +20,4 @@ resource "aws_lb_listener" "alb_listener_terraform" {
             status_code  = var.alb_listener_default_action_fixed_response_status_code
         }
     }
-    tags                 = local.tags
 }
