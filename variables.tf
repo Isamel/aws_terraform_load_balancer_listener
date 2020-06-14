@@ -8,6 +8,11 @@ variable "alb_listener_depends_on" {
     description = "alb listener depends on"
 }
 
+variable "alb_listener_load_balancer_arn" {
+    type        = string
+    description = "alb listener load balancer arn."
+}
+
 variable "alb_listener_port" {
     type        = number
     description = "alb listener port."
